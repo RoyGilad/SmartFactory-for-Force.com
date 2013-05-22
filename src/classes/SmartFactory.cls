@@ -30,6 +30,7 @@ public with sharing class SmartFactory {
 	// can't map by Schema.sObjectType, use object name String instead
 	public static map<String, set<String>> ExcludedFields = new map<String, set<String>>{
 		'All' => new set<String>{'OwnerId', 'LastModifiedById', 'CreatedById', 'LastModifiedDate', 'CreatedDate'},
+		'Lead' => new set<String>{'ConvertedDate'},
 		'Account' => new set<String>{'FirstName', 'LastName'}
 	};
 	
